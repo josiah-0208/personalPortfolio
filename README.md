@@ -1,3 +1,19 @@
+# personalPortfolio
+An ever-updating portfolio website
+
+1. 반응형
+2. typescript
+3. nextJs
+4. redux toolkit
+5. emotion
+6. tailwind css
+7. seo
+8. 정적페이지
+9. 호스팅 사이트
+10. ci/cd - github actions
+
+feat. GPT
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -34,3 +50,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+=======
+
+
