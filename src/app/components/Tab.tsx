@@ -6,7 +6,7 @@ type Props = {
 
 const Tab = (props: Props) => {
   return (
-    <li className='text-sky-500/25 hover:text-sky-500 transition duration-300'>
+    <li className='relative shadow-lg bg-sky-500 hover:text-sky-500 transition duration-300'>
         {props.categorie}
     </li>
   ) 

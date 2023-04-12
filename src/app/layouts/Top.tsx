@@ -9,7 +9,7 @@ export default function Top({ }: Props) {
     const categories: string[] = ["Introduce", "Protfolio", "Learning", "Etc"]
 
     return (
-        <ul>
+        <ul className='flex bg-gray-400 justify-around'>
             {/* 탭 이름 배열을 map으로 나열 */}
             {categories.map((categorie, index) => {
                 return <Tab key={""+categorie+index} categorie={categorie}/>
