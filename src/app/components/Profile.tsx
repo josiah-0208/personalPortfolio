@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
-import TypingAnimation from './typingAnimation'
+import TypingAnimation from './TypingAnimation'
 
 type Props = {}
 
-const Profile = (props: Props) => {
+const Profile:React.FC = (props: Props) => {
 
   // 소개말을 텍스트로 정해놓고, typingAnimation에 props로 건네준다.
   const introTxt = "안녕하세요. 이 페이지는 Next.Js TypeScript TailwindCss 로 개발되고 있습니다."
