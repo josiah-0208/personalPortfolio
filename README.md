@@ -12,8 +12,8 @@ An ever-updating portfolio website
 6. TailwindCss
 7. Emotion
 8. SEO
-9. SSR 호스팅 
+9. vercel 호스팅 
 10. CI/CD - github actions
 
 feat. ChatGPT
-
+web.dev
