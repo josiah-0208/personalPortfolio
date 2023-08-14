@@ -6,6 +6,11 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --blue1: #00a8e8;
+  --blue2: #0ba5be;
+  --blue3: #62cdff;
+  --navy1: #27374d;
+  --orange1: #fb8500;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,6 +19,14 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
 }
 
 /* body {

@@ -1,22 +1,12 @@
-'use client'
-import React, { useEffect, useState } from 'react'
+'use client';
+import React, { useEffect, useState } from 'react';
 
-type Props = {
-    txt: string,
-}
+type TypingAnimationProps = {
+  title: string;
+};
 
-const TypingAnimation = (props: Props) => {
-    const [txt, setTxt] = useState(props.txt)
+const TypingAnimation = ({ title }: TypingAnimationProps) => {
+  return <div className="whitespace-pre dark:text-white">{title}</div>;
+};
 
-    useEffect(() => {
-
-    }, [])
-
-    return (
-        <div>
-            {txt}
-        </div>
-    )
-}
-
-export default TypingAnimation
+export default TypingAnimation;

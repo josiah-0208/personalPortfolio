@@ -1,18 +1,16 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
 
-type Props = {
-  categorie: string,
-}
+type TabProps = {
+  category: string;
+};
 
-const Tab = (props: Props) => {
+const Tab = ({ category }: TabProps) => {
   return (
-    <li className='shadow-lg bg-sky-500 hover:text-sky-500 transition duration-300'>
-      <Link href="/">
-        {props.categorie}
-      </Link>
+    <li className="bg-sky-500 shadow-lg transition duration-300 hover:text-sky-500">
+      <Link href={'/' + category}>{category}</Link>
     </li>
-  )
-}
+  );
+};
 
-export default Tab
+export default Tab;
