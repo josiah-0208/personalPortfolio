@@ -12,9 +12,16 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-      colors: {
-        BgDark: 'var(--navy1)',
+      transitionProperty: {
+        'background-color': 'background-color',
       },
+    },
+    colors: {
+      backgroundColor: 'var(--backgroundColor)',
+      fontColor: 'var(--fontColor)',
+      fontColorSky: 'var(--fontColorSky)',
+      fontColorOrange: 'var(--fontColorOrange)',
+      fontColorSilver: 'var(--fontColorSilver)',
     },
   },
   plugins: [],

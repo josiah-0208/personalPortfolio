@@ -6,7 +6,24 @@ type TypingAnimationProps = {
 };
 
 const TypingAnimation = ({ title }: TypingAnimationProps) => {
-  return <div className="whitespace-pre dark:text-white">{title}</div>;
+  const [tempTitle, setTempTitle] = useState<string>('');
+  const [titleCnt, setTitleCnt] = useState<number>(0);
+
+  useEffect(() => {
+    const typingInterval = setTimeout(() => {
+      setTempTitle((pre) => pre + title[titleCnt]);
+      setTitleCnt((pre) => pre + 1);
+    }, 80);
+
+    if (title.length === titleCnt) {
+      clearInterval(typingInterval);
+    }
+
+    return () => {
+      clearInterval(typingInterval);
+    };
+  }, [titleCnt]);
+  return <h2 className="whitespace-pre text-fontColorSky">{tempTitle}</h2>;
 };
 
 export default TypingAnimation;

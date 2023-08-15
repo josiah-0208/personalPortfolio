@@ -7,7 +7,7 @@ type TabProps = {
 
 const Tab = ({ category }: TabProps) => {
   return (
-    <li className="bg-sky-500 shadow-lg transition duration-300 hover:text-sky-500">
+    <li className="text-fontColorSilver shadow-lg hover:text-fontColorSky dark:text-fontColor dark:hover:text-fontColorOrange">
       <Link href={'/' + category}>{category}</Link>
     </li>
   );

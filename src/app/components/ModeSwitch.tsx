@@ -29,11 +29,11 @@ const ModeSwitch = ({}: Props) => {
     console.log(bool);
     setIsDarkMode(bool);
     if (bool === true) {
-      localStorage.theme = 'dark';
       document.documentElement.classList.add('dark');
+      localStorage.theme = 'dark';
     } else if (bool === false) {
-      localStorage.theme = 'light';
       document.documentElement.classList.remove('dark');
+      localStorage.theme = 'light';
     }
   }
 
@@ -42,7 +42,7 @@ const ModeSwitch = ({}: Props) => {
       <DarkModeSwitch
         className="relative right-4 top-2"
         sunColor="var(--blue3)"
-        moonColor="var(--orange1)"
+        moonColor="var(--orange)"
         checked={isDarkMode}
         onChange={switchMode}
       />

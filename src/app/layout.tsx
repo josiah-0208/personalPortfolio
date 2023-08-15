@@ -21,10 +21,12 @@ export default function RootLayout({
   `;
   return (
     <html lang="en">
-      <body className="transition-all dark:bg-BgDark">
+      <body className="bg-backgroundColor transition-[background-color]">
         <script dangerouslySetInnerHTML={{ __html: settingModeScript }} />
-        <ModeSwitch />
-        {children}
+        <header>
+          <ModeSwitch />
+        </header>
+        <main>{children}</main>
       </body>
     </html>
   );

@@ -3,21 +3,31 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  height: 100%;
+  --backgroundColor: #ebf2fa;
+  --fontColor: #1d1d1f;
+  --fontColorSky: #62cdff;
+  --fontColorOrange: #fb8500;
+  --fontColorSilver: #6e6e73;
+
   --blue1: #00a8e8;
   --blue2: #0ba5be;
   --blue3: #62cdff;
-  --navy1: #27374d;
-  --orange1: #fb8500;
+  --orange: #fb8500;
+
+  /* --fontColor: #191f28; */
+  /* --backgroundColorApple: #f5f5f7;
+  --backgroundColor: #edf2fb;
+  --backgroundColor: #e7ecef; */
+}
+
+:root[class='dark'] {
+  --backgroundColor: #051923;
+  --fontColor: #ececf1;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
   }
 }
 
@@ -26,7 +36,14 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* body {
@@ -38,3 +55,8 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
+
+main {
+  width: 80%;
+  height: 100%;
+}
