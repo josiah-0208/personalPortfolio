@@ -19,11 +19,12 @@ export default function RootLayout({
     document.documentElement.classList.remove('dark')
   }
   `;
+
   return (
     <html lang="en">
-      <body className="bg-backgroundColor transition-[background-color]">
+      <body className="bg-gradient-to-br from-backgroundBlue from-40% via-backgroundWhite via-65% to-backgroundBlue to-90% transition-background-color dark:bg-backgroundColor dark:bg-none">
         <script dangerouslySetInnerHTML={{ __html: settingModeScript }} />
-        <header>
+        <header className="h-16 ">
           <ModeSwitch />
         </header>
         <main>{children}</main>

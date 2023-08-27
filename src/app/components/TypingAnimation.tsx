@@ -23,7 +23,11 @@ const TypingAnimation = ({ title }: TypingAnimationProps) => {
       clearInterval(typingInterval);
     };
   }, [titleCnt]);
-  return <h2 className="whitespace-pre text-fontColorSky">{tempTitle}</h2>;
+  return (
+    <h2 className="h-44 whitespace-pre text-xl leading-relaxed text-fontColorSky">
+      {tempTitle}
+    </h2>
+  );
 };
 
 export default TypingAnimation;

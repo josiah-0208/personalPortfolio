@@ -38,9 +38,9 @@ const ModeSwitch = ({}: Props) => {
   }
 
   return (
-    <div className="flex h-12 justify-end ">
+    <div className="flex justify-center">
       <DarkModeSwitch
-        className="relative right-4 top-2"
+        className="relative top-4"
         sunColor="var(--blue3)"
         moonColor="var(--orange)"
         checked={isDarkMode}

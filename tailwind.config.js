@@ -15,13 +15,16 @@ module.exports = {
       transitionProperty: {
         'background-color': 'background-color',
       },
-    },
-    colors: {
-      backgroundColor: 'var(--backgroundColor)',
-      fontColor: 'var(--fontColor)',
-      fontColorSky: 'var(--fontColorSky)',
-      fontColorOrange: 'var(--fontColorOrange)',
-      fontColorSilver: 'var(--fontColorSilver)',
+      colors: {
+        backgroundColor: 'var(--backgroundColor)',
+        backgroundBlue: '#ebf2fa',
+        backgroundWhite: '#f9f9fd',
+        fontColor: 'var(--fontColor)',
+        fontColorSky: 'var(--fontColorSky)',
+        fontColorOrange: 'var(--fontColorOrange)',
+        fontColorSilver: 'var(--fontColorSilver)',
+      },
+      // 왜인지는 모르겠는데 colors가 extend 바깥에 있으면 기본 색상이 작동되지 않는다.
     },
   },
   plugins: [],
