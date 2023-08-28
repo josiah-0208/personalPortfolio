@@ -22,7 +22,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className="bg-gradient-to-br from-backgroundBlue from-40% via-backgroundWhite via-65% to-backgroundBlue to-90% transition-background-color dark:bg-backgroundColor dark:bg-none">
+      <body className="bg-gradient-to-br from-backgroundBlue from-45% via-backgroundWhite via-65% to-backgroundBlue to-95% transition-background-color dark:bg-backgroundColor dark:bg-none">
         <script dangerouslySetInnerHTML={{ __html: settingModeScript }} />
         <header className="h-16 ">
           <ModeSwitch />

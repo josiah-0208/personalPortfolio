@@ -5,7 +5,7 @@ type Props = {};
 
 export default function Nav({}: Props) {
   // 상단 탭 이름 배열을 미리 정의해둠.
-  const categories: string[] = ['Introduction', 'Careers', 'Portfolio'];
+  const categories: string[] = ['About', 'Experience', 'Flags'];
 
   return (
     <nav>
