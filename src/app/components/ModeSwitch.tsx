@@ -6,7 +6,6 @@ type Props = {};
 
 const ModeSwitch = ({}: Props) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  console.log(isDarkMode);
   // next는 client side를 실행하기 전에 server side 렌더를 먼저 수행한다.
   // 따라서, 밑의 코드는 layout.tsx 페이지에서 실행되면 좋겠으나,
   // localStorage가 브라우저의 것이므로, next가 알 방법이 없다. 클라이언트 사이드에서 실행될 수 밖에 없다.

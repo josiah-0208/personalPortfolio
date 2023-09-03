@@ -17,7 +17,7 @@
   --fontColor: #1d1d1f;
   --fontColorSky: #62cdff;
   --fontColorOrange: #fb8500;
-  --fontColorSilver: rgba(110, 110, 115, 0.63);
+  --fontColorSilver: rgba(110, 110, 115, 0.43);
   /* --fontColorSilver: #b2b2be; */
 
   --blue1: #00a8e8;
@@ -36,15 +36,16 @@
   --fontColor: #ececf1;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
   }
-}
+} */
 
 * {
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
   padding: 0;

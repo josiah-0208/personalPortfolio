@@ -7,8 +7,8 @@ type TabProps = {
 
 const Tab = ({ category }: TabProps) => {
   return (
-    <li className="text-2xl font-normal text-fontColorSilver shadow-black drop-shadow-xl hover:text-fontColorSky dark:text-fontColor dark:hover:text-fontColorOrange">
-      <Link href={'/' + category}>{category}</Link>
+    <li className="text-[28px] font-semibold text-fontColorSilver drop-shadow-sm transition-all duration-300 ease-out hover:scale-[1.03] hover:text-fontColorSky dark:text-fontColor dark:hover:text-fontColorOrange">
+      <Link href={'/' + category.toLowerCase()}>{category}</Link>
     </li>
   );
 };

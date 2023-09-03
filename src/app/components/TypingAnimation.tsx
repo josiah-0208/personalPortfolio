@@ -13,7 +13,7 @@ const TypingAnimation = ({ title }: TypingAnimationProps) => {
     const typingInterval = setTimeout(() => {
       setTempTitle((pre) => pre + title[titleCnt]);
       setTitleCnt((pre) => pre + 1);
-    }, 80);
+    }, 50);
 
     if (title.length === titleCnt) {
       clearInterval(typingInterval);
@@ -24,7 +24,7 @@ const TypingAnimation = ({ title }: TypingAnimationProps) => {
     };
   }, [titleCnt]);
   return (
-    <h2 className="h-44 whitespace-pre text-xl font-medium leading-relaxed text-fontColorSky">
+    <h2 className="h-44 whitespace-pre text-[36px] font-semibold leading-snug text-fontColorSky drop-shadow-sm">
       {tempTitle}
     </h2>
   );
