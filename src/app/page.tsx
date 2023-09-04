@@ -9,7 +9,7 @@ const introTxt = "'그 곳에 산이 있으니까'\n프론트 개발자 이현�
 
 export default function Home() {
   return (
-    <section className="relative top-[-32px] flex h-[360px] w-[56%] flex-col justify-between">
+    <section className="relative top-[-32px] flex h-[360px] w-[56%] flex-col items-center justify-between">
       <Profile title={introTxt} />
       <Nav />
     </section>

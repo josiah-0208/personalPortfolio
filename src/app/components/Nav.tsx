@@ -8,7 +8,7 @@ export default function Nav({}: Props) {
   const categories: string[] = ['About', 'Experience', 'Flags'];
 
   return (
-    <nav>
+    <nav className="w-full">
       <ul className="flex justify-around">
         {/* 탭 이름 배열을 map으로 나열 */}
         {categories.map((category, index) => {

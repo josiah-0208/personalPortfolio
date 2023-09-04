@@ -18,7 +18,7 @@ module.exports = {
       colors: {
         backgroundColor: 'var(--backgroundColor)',
         backgroundBlue: '#dfeaf7',
-        backgroundWhite: '#f9f9fd',
+        backgroundWhite: 'rgba(247, 247, 252)',
         fontColor: 'var(--fontColor)',
         fontColorSky: 'var(--fontColorSky)',
         fontColorOrange: 'var(--fontColorOrange)',
