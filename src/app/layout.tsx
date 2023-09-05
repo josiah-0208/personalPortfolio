@@ -1,3 +1,4 @@
+import Header from './components/Header';
 import ModeSwitch from './components/ModeSwitch';
 import './globals.css';
 
@@ -24,9 +25,10 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-gradient-to-br from-backgroundBlue from-25% via-backgroundWhite via-60% to-backgroundBlue to-95% transition-background-color dark:bg-backgroundColor dark:bg-none">
         <script dangerouslySetInnerHTML={{ __html: settingModeScript }} />
-        <header className="h-16 ">
+        {/* <header className="h-16 ">
           <ModeSwitch />
-        </header>
+        </header> */}
+        <Header />
         <main>{children}</main>
       </body>
     </html>
