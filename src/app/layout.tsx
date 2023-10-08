@@ -29,7 +29,7 @@ export default function RootLayout({
           <ModeSwitch />
         </header> */}
         <Header />
-        <main>{children}</main>
+        <main className="w-full lg:w-[1024px]">{children}</main>
       </body>
     </html>
   );
