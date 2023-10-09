@@ -11,7 +11,7 @@ const Profile = ({ title }: ProfileProps) => {
   // 소개말을 텍스트로 정해놓고, typingAnimation에 props로 건네준다.
 
   return (
-    <div className="flex w-full flex-col items-center gap-12 lg:flex-row">
+    <div className="flex w-full flex-col items-center gap-8 lg:flex-row lg:justify-center lg:gap-12">
       {/* next에서 제공하는 이미지 컴포넌트 */}
       <Image
         className="rounded-full shadow-2xl"

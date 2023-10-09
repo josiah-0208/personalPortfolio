@@ -9,7 +9,7 @@ export default function Nav({}: Props) {
 
   return (
     <nav className="w-full">
-      <ul className="flex justify-around">
+      <ul className="flex justify-evenly">
         {/* 탭 이름 배열을 map으로 나열 */}
         {categories.map((category, index) => {
           return <Tab key={'' + category + index} category={category} />;
