@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import { hoverScale } from '../modules/style/events';
 
 type Props = {};
 
@@ -15,7 +16,12 @@ export default function About({}: Props) {
           <br />
           다양한 지역과 문화를 경험하는 것을 좋아합니다.
         </div>
-        <div className="min-w-[300px] rounded-2xl bg-[rgb(239,239,239)] shadow-md transition-all duration-300 ease-out hover:scale-[1.01] hover:shadow-lg"></div>
+        <div
+          className={
+            'min-w-[300px] rounded-2xl bg-[rgb(239,239,239)] shadow-md' +
+            hoverScale
+          }
+        ></div>
         <Image
           src={'/static/images/icon_google.svg'}
           alt="google icon"

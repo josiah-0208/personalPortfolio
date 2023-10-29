@@ -15,3 +15,5 @@ export default function Home() {
     </section>
   );
 }
+
+// export async function getStaticProps() {}

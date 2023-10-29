@@ -27,7 +27,10 @@ function Header({}: Props) {
       <header className="flex h-16 items-center">
         <nav className="flex gap-8">
           {navList.map((item) => (
-            <Link href={`/${item === 'HOME' ? '/' : item.toLowerCase()}`}>
+            <Link
+              href={`/${item === 'HOME' ? '/' : item.toLowerCase()}`}
+              key={item}
+            >
               {item}
             </Link>
           ))}
