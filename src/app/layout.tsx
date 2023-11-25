@@ -22,7 +22,7 @@ export default function RootLayout({
   `;
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className="flex overflow-auto bg-gradient-to-br from-backgroundBlue from-25% via-backgroundWhite via-60% to-backgroundBlue to-95% transition-background-color dark:bg-backgroundColor dark:bg-none">
         <script dangerouslySetInnerHTML={{ __html: settingModeScript }} />
         <Header />
