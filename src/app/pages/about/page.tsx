@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import { hoverScale } from '../modules/style/events';
+import { hoverScale } from '../../modules/style/events';
 
 type Props = {};
 
