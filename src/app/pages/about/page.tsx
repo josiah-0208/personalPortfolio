@@ -8,7 +8,7 @@ export default function About({}: Props) {
   // const
   return (
     <section className="h-full dark:text-white">
-      <div className="flex gap-8">
+      <div className="flex-col gap-8">
         <div className="text-[24px]">
           안녕하세요.
           <br />

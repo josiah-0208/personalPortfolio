@@ -24,7 +24,7 @@ const TypingAnimation = ({ title }: TypingAnimationProps) => {
     };
   }, [titleCnt]);
   return (
-    <h2 className="h-[68px] whitespace-pre text-[24px] font-semibold leading-snug text-fontColorSky drop-shadow-lg lg:h-full lg:w-[404px] lg:text-[36px]">
+    <h2 className="h-[68px] w-[272px] whitespace-pre text-[24px] font-semibold leading-snug text-fontColorSky drop-shadow-lg lg:h-full lg:w-[404px] lg:text-[36px]">
       {tempTitle}
     </h2>
   );
