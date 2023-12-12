@@ -27,7 +27,7 @@ export default function About({}: Props) {
           alt="google icon"
           width={32}
           height={32}
-        />{' '}
+        />
         lhyunsoo0208@gmail.com
         <Image
           src={'/static/images/icon_naver.svg'}

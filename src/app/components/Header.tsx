@@ -6,37 +6,35 @@ import Link from 'next/link';
 
 type Props = {};
 
-type currentPage {
-  [true]
-}
-
 function Header({}: Props) {
   const pathname = usePathname();
   const [currentPathname, setCurrentPathname] = useState<string>('/');
-  const currentPage = {
-    true: 
-  }
 
   const navList: string[] = ['HOME', 'ABOUT', 'EXPERIENCE', 'FLAGS'];
-  // use client를 써서
-  // home about experience flags 다크모드 영어
+
   useEffect(() => {
     setCurrentPathname(pathname);
   }, [pathname]);
 
+  function getCurrentPageStyle(path: string): string {
+    return path.toLowerCase() === currentPathname.split('/')[2]
+      ? 'text-fontColorSky'
+      : 'dark:text-white';
+  }
+
   if (currentPathname.length === 1) {
     return (
-      <header className="flex items-center h-16">
+      <header className="flex h-16 items-center">
         <ModeSwitch></ModeSwitch>
       </header>
     );
   } else {
     return (
-      <header className="flex items-center h-16 text-blue">
+      <header className="text-blue flex h-16 items-center">
         <nav>
           <ul className="flex gap-8">
             {navList.map((item) => (
-              <li className="{{ currentPathname ? 'text-red-500' : 'text-blue-500'  }}">
+              <li className={getCurrentPageStyle(item)}>
                 <Link
                   href={`/${
                     item === 'HOME' ? '/' : 'pages/' + item.toLowerCase()
