@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
 import { hoverScale } from '../../modules/style/events';
+import CardSection from './components/CardSection';
+import LinkIcon from './components/LinkIcon';
 
 type Props = {};
 
@@ -8,7 +10,7 @@ export default function About({}: Props) {
   // const
   return (
     <section className="h-full dark:text-white">
-      <div className="flex-col gap-8">
+      <div className="flex flex-col gap-8">
         <div className="text-[24px]">
           안녕하세요.
           <br />
@@ -16,24 +18,20 @@ export default function About({}: Props) {
           <br />
           다양한 지역과 문화를 경험하는 것을 좋아합니다.
         </div>
-        <div
-          className={
-            'min-w-[300px] rounded-2xl bg-[rgb(239,239,239)] shadow-md' +
-            hoverScale
-          }
-        ></div>
-        <Image
+        <CardSection />
+        <LinkIcon
           src={'/static/images/icon_google.svg'}
           alt="google icon"
           width={32}
           height={32}
+          content="lhyunsoo0208@gmail.com"
         />
-        lhyunsoo0208@gmail.com
-        <Image
+        <LinkIcon
           src={'/static/images/icon_naver.svg'}
           alt="naver icon"
           width={32}
           height={32}
+          content="beth_shan@naver.com"
         />
         <Image
           src={'/static/images/icon_github.svg'}
