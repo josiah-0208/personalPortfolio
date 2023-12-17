@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
 
-type IconProps = {
+export type IconProps = {
   src: string;
   alt: string;
   width: number;
   height: number;
-  content: string;
+  content?: string;
 };
 
 function LinkIcon({ src, alt, width, height, content }: IconProps) {
